@@ -1,8 +1,13 @@
+/* Database class file, each database instance will have a url, username, password, and connection 
+	When a database object is instantiated, it connects to a database with the given url. 
+	After connecting to the database, a query function can be used to execute querys */
+
+
 import java.sql.*;
 
 public class Database {
 
-	/* each database object needs these variables*/
+	/* each database object has these attributes */
 	private String url;
 	private String username;
 	private String password;
@@ -42,7 +47,7 @@ public class Database {
 
 	/* function to print a result set */
 	/* takes one parameter which is the result set to be printed */
-	public static void printResult(ResultSet rset){
+	public void printResult(ResultSet rset){
 		try{
 			ResultSetMetaData metadata = rset.getMetaData(); /* get metadata of result set */
 			int columnCount = metadata.getColumnCount(); /* use metadata to get number of columns in result */
@@ -58,10 +63,5 @@ public class Database {
 		catch(Exception e) {
 			System.out.println(e);
 		}
-	}
-
-	public static void main(String[] args){
-		Database db = new Database("jdbc:mysql://localhost:3306/practice","root","zach");
-		printResult(db.query("select * from student;"));
 	}
 }
