@@ -17,8 +17,6 @@ public class dbGUI implements ActionListener{
 
 	public dbGUI(){
 
-		db = new Database("jdbc:mysql://localhost:3306/practice","root","zach"); /* connect to a database */
-
 		f = new JFrame("DB Interface"); /* creates JFrame for the GUI */
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);
@@ -34,6 +32,12 @@ public class dbGUI implements ActionListener{
 		Button b = new Button("Submit"); /* create a button for the JFrame */
 		b.addActionListener(this); /* adds an action listener to the submit button */
 		f.add(b);
+
+
+		String url = JOptionPane.showInputDialog(f, "Enter url: ");
+		String username = JOptionPane.showInputDialog(f, "Enter username: ");
+		String password = JOptionPane.showInputDialog(f, "Enter password: ");
+		db = new Database("jdbc:mysql://" + url, username, password); /* connect to a database */
 	}
 
 
