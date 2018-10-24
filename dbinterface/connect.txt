@@ -1,0 +1,3 @@
+dbclass.cs.nmsu.edu:3306/cs482502fa18_zgarcia
+zgarcia
+kzR2_N9M
