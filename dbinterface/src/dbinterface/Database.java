@@ -47,6 +47,10 @@ public ResultSet query(String q){
 	}
 }
 
+/* Method to return connection */
+public Connection getConn() {
+	return conn;
+}
 /* function to print a result set */
 /* takes one parameter which is the result set to be printed */
 public void printResult(ResultSet rset){
