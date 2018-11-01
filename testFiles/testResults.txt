@@ -1,0 +1,29 @@
+Bulk Insert (1000 entries):
+Bulk Insert (10000 entries):
+Bulk Insert (100000 entries):
+
+Single Insert (1000 entries):
+Single Insert (10000 entries):
+Single Insert (100000 entries):
+
+Join(100000):
+Join(200000):
+Join(500000):
+
+Sort(100000):
+Sort(200000):
+Sort(500000):
+
+Average(100000):
+Average(200000):
+Average(500000):
+
+Count(100000):
+Count(200000):
+Count(500000):
+
+Max/Min(100000):
+Max/Min(200000):
+Max/Min(500000):
+
+
