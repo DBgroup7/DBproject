@@ -1,0 +1,27 @@
+Bulk Insert (1000 entries):370 ms
+Bulk Insert (10000 entries):832 ms
+Bulk Insert (100000 entries):6393 ms
+
+Single Insert (1000 entries):41344 ms
+Single Insert (10000 entries):434785 ms
+Single Insert (100000 entries):4603246 ms
+
+Join(100000):2163 ms
+Join(200000):8248 ms
+Join(500000):17868 ms
+
+Sort(100000):1841 ms
+Sort(200000):4877 ms
+Sort(500000):25613 ms
+
+Average(100000):948 ms
+Average(200000):4879
+Average(500000):15697
+
+Count(100000):308 ms
+Count(200000):1808 ms
+Count(500000):3326 ms
+
+Max/Min(100000):328 ms
+Max/Min(200000):1947 ms
+Max/Min(500000):3312 ms
